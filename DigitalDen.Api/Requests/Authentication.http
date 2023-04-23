@@ -1,0 +1,19 @@
+@url = http://localhost:5235/api/authentication
+
+###
+POST {{url}}/login
+content-type: application/json
+
+{
+    "email": "douglbb1@gmail.com",
+    "password": "123456"
+}
+
+###
+POST {{url}}/signin
+content-type: application/json
+
+{
+    "email": "douglbb1@gmail.com",
+    "password": "123456"
+}

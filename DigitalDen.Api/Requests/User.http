@@ -1,0 +1,17 @@
+@url = http://localhost:5235/api/user
+@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNjgyMjEzNzkwLCJzdWIiOiI5OTZiOTk3Zi0zNGU0LTQzOGUtYTBjNi04MTM4ZTU5MTRjMmEiLCJlbWFpbCI6ImRvdWdsYmIxQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnt9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNjgyMjEwMTkwfV0sInNlc3Npb25faWQiOiIwZWE5YWJiYS03MGVjLTRiZjgtOTI0Yi05ZWQyMjEwN2Y2OWYifQ.ITEZHLsoOHBS2FUDvU6QeSPIZvrtycWB_z5JBdtcK6A
+###
+GET {{url}}/get/5f40594a-99b4-4a87-b762-f669c50e4fc2
+###
+GET {{url}}/get-all
+###
+POST {{url}}/create
+content-type: application/json
+authorization: {{accessToken}}
+
+{
+    "name": "John Doe",
+    "email": "john@test.com",
+    "password": "123456",
+    "confirmPassword":"123456"
+}
